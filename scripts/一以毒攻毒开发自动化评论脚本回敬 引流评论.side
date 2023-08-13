@@ -1,0 +1,105 @@
+{
+  "id": "5c509f1f-3b95-4e40-9c25-c2dc6832e228",
+  "version": "2.0",
+  "name": "（一）以毒攻毒：开发自动化评论脚本回敬 “引流评论”",
+  "url": "",
+  "tests": [{
+    "id": "0548b398-d971-4ff4-aac1-f179b030619b",
+    "name": "main",
+    "commands": [{
+      "id": "70147cda-224b-49de-926f-f1bb8bd12972",
+      "comment": "",
+      "command": "open",
+      "target": "your url",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eaead706-6270-4603-94ea-026240021ccc",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "2e24aa34-a8a8-4eb9-a343-d00493a82734",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "your xpath",
+      "targets": [],
+      "value": "cnt"
+    }, {
+      "id": "b194b5fb-93fb-4453-b535-e1f7a4cba34f",
+      "comment": "",
+      "command": "while",
+      "target": "${i} <= ${cnt}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4978fc98-1bdd-4270-90f8-f9ee0ff325e6",
+      "comment": "点击文章链接",
+      "command": "click",
+      "target": "your id/css/xpath/...",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6857f7c-35d5-444c-8642-3a761c9438a7",
+      "comment": "选择打开的窗口",
+      "command": "selectWindow",
+      "target": "your handle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70922264-dd3d-4628-8ee8-ffbaa7bacb4a",
+      "comment": "点击评论区",
+      "command": "click",
+      "target": "target's common area",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6082a3f6-9f64-42b0-9dc6-25b3a39367ac",
+      "comment": "输入评论内容",
+      "command": "type",
+      "target": "target's common area",
+      "targets": [],
+      "value": "your value"
+    }, {
+      "id": "03ddb3d7-86b7-4fdb-b969-aeadf2e3f1c0",
+      "comment": "点击提交按钮",
+      "command": "click",
+      "target": "sumbit button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb9526f8-34f1-4823-b129-8464294d5aa6",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${i}+1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8be9da0-9c46-4c8f-85ea-ac0ce6af238b",
+      "comment": "",
+      "command": "close",
+      "target": "your handle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1220596c-90dc-4429-aec6-27c4f2e21ee8",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ac812df4-b5ea-4b7d-afda-82b9ea89cff6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0548b398-d971-4ff4-aac1-f179b030619b"]
+  }],
+  "urls": [],
+  "plugins": []
+}
