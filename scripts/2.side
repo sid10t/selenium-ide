@@ -1,0 +1,70 @@
+{
+  "id": "bc9d3b03-d285-4f14-985f-7778b946dd4f",
+  "version": "2.0",
+  "name": "2",
+  "url": "",
+  "tests": [{
+    "id": "e7b964de-58bc-4980-8fd5-ef7c31ba32e1",
+    "name": "（二）重塑抖音个性化推荐！自动化清空关注列表",
+    "commands": [{
+      "id": "574cea69-3246-4231-9910-422922a69ed2",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.douyin.com/user/self?showTab=like",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2c463d8-6544-4215-adc0-eef5711b7a9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.AULCPX_8:nth-child(1) > .TxoC9G6_",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40537f16-879b-470f-b3ef-a117628388a0",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "c7183d88-d971-4f50-ae74-3fc07803ae17",
+      "comment": "",
+      "command": "times",
+      "target": "50",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e5324db-0ce7-42dc-978c-2702ecaba9da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vcEWxPjN:nth-child(${i}) .B10aL8VQ > .cNFB52sk",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c53e040-9058-499e-984a-913df848695e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${i}+3",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "472ab2c4-7c9c-47f4-aadb-cc76902595ed",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b14b0c5e-29b0-48ec-b01f-381f5430a221",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e7b964de-58bc-4980-8fd5-ef7c31ba32e1"]
+  }],
+  "urls": [],
+  "plugins": []
+}
